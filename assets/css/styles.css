@@ -34,7 +34,6 @@ p {
   padding-left: 2rem;
   padding-bottom: 0.5rem;
 }
-
 .header__logo {
   width: 250px;
 }
@@ -46,16 +45,11 @@ p {
   color: #FFF;
   text-align: center;
 }
-
 .slogan__title {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding: 10rem;
   font-weight: 200;
   font-size: 50px;
 }
-
 .slogan__title-emphasis {
   font-weight: 700;
   font-size: 50px;
@@ -125,7 +119,7 @@ footer {
   background-color: #686963;
   padding: 5rem;
 }
-footer__logo {
+footer img {
   display: block;
   margin-left: auto;
   margin-right: auto;

@@ -4,20 +4,15 @@
     background-size: contain;
     color: $white;
     text-align: center;
-}
-
-.slogan__title {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
-    font-weight: $extra-light;
-    font-size: $large;
-}
-
-.slogan__title-emphasis {
-    font-weight: $bold;
-    font-size: $large;
+    &__title {
+        padding: 10rem;
+        font-weight: $extra-light;
+        font-size: $large;
+        &-emphasis {
+            font-weight: $bold;
+            font-size: $large;
+        }
+    }    
 }
 
 .product {
