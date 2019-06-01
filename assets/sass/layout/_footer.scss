@@ -1,11 +1,11 @@
 footer {
     background-color: $granite-gray;
     padding: 5rem;
-}
 
-.footer__logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
 }
