@@ -1,0 +1,21 @@
+//Define el tamaño al 100% del ancho de la pantalla
+body {
+    height: 100vh;
+}
+
+/* Base Typography*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $raleway;
+    margin: 0;
+}
+
+h2 {
+    font-size: $large;
+}
+
+p {
+    font-family: $raleway;
+    font-weight: $extra-light;
+    font-size: $medium;
+    margin: 0;
+}

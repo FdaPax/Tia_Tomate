@@ -1,0 +1,84 @@
+.slogan {
+    width: 100%;
+    background-color: $jelly-bean;
+    background-size: contain;
+    color: $white;
+    text-align: center;
+}
+
+.slogan__title {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-weight: $extra-light;
+    font-size: $large;
+}
+
+.slogan__title-emphasis {
+    font-weight: $bold;
+    font-size: $large;
+}
+
+.product {
+    background-color: $taupe-gray;
+    color: $white;
+}
+
+.product__container, .origin__container {
+    padding-top: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 4rem;
+}
+
+.product__title, .origin__title, .about__subtitle {
+    font-size: 30px;
+    font-weight: $bold;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.product__text, .origin__text, .about__text {
+    text-align: left;
+    padding-top: 1.5rem;
+    font-weight: $regular;
+}
+
+.origin, .about {
+    background-color: $snow;
+    color: $granite-gray;
+}
+
+
+.about__title, .contact__container {
+    background-color: $jelly-bean;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-weight: $bold;
+    font-size: $large;
+    text-align: center;
+    color: $white;
+    
+}
+
+.about__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 4rem;
+     
+}
+
+.about__javiera, .about__roberto {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.about__personas {
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
