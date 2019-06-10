@@ -1,79 +1,149 @@
-.slogan {
-    width: 100%;
-    background-color: $jelly-bean;
-    background-size: contain;
-    color: $white;
-    text-align: center;
-    &__title {
-        padding: 10rem;
-        font-weight: $extra-light;
-        font-size: $large;
-        &-emphasis {
-            font-weight: $bold;
-            font-size: $large;
-        }
-    }    
-}
-
 .product {
+    width: 100vw;
     background-color: $taupe-gray;
-    color: $white;
+    color: $snow;
+    &__section {
+        padding: 3rem 3rem 2rem 3rem;
+        @media (min-width: 576px) {
+            padding: 4.8rem 6rem 2.8rem 6rem;
+        }
+        @media (min-width: 768px) {
+            padding: 5rem 7rem 3rem 7rem;
+        }
+        @media (min-width: 992px) {
+            padding: 5.8rem 7.8rem 3.8rem 7.8rem;
+        }
+        @media (min-width: 1200px) {
+            padding: 6rem 8rem 4rem 8rem;
+        }
+    }
+    &__imagen {
+        margin: 0;     
+    }
+    &__container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        @media (min-width: 1200px) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-weight: $bold;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        @media (min-width: 576px) {
+            font-size: 1.4rem;
+        }
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+        @media (min-width: 992px) {
+            font-size: 1.8rem;
+        }
+        @media (min-width: 1200px) {
+            font-size: 2rem;
+        }
+        
+    }
+    &__text {
+        margin-top: 1.2rem;
+        font-weight: $regular;
+        font-size: 1rem;
+    }
 }
 
-.product__container, .origin__container {
-    padding-top: 4rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 4rem;
-}
-
-.product__title, .origin__title, .about__subtitle {
-    font-size: 30px;
-    font-weight: $bold;
-    padding-top: 1.5rem;
-    text-align: center;
-}
-
-.product__text, .origin__text, .about__text {
-    text-align: left;
-    padding-top: 1.5rem;
-    font-weight: $regular;
-}
-
-.origin, .about {
+.origin {
+    width: 100vw;
     background-color: $snow;
     color: $granite-gray;
+    &__section {
+        @extend .product__section; 
+    }
+    &__imagen {
+        @extend .product__imagen;
+    }
+    &__container {
+        @extend .product__container; 
+    }
+    &__title {
+       @extend .product__title; 
+    }
+    &__text {
+        @extend .product__text;
+    }
 }
 
-
-.about__title, .contact__container {
+.us {
+    width: 100vw;
     background-color: $jelly-bean;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    font-weight: $bold;
-    font-size: $large;
-    text-align: center;
-    color: $white;
-    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media (min-width: 576px) {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    @media (min-width: 768px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    @media (min-width: 992px) {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+    @media (min-width: 1200px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    &__title {
+        @extend .main__title;
+    }
 }
 
-.about__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-top: 4rem;
-     
+.about {
+    @extend .origin;
+    &__section {
+        @extend .product__section; 
+        &--top {
+            @extend .product__section;
+            padding-top: 0;
+        }
+    }
+    &__imagen {
+        @extend .product__imagen;
+    }
+    &__container {
+        @extend .product__container; 
+    }
+    &__title {
+       @extend .product__title; 
+    }
+    &__text {
+        @extend .product__text;
+    }
 }
 
-.about__javiera, .about__roberto {
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
-
-.about__personas {
-    padding-top: 1rem;
-    padding-bottom: 6rem;
+.contact {
+    width: 100vw;
+    background-color: $jelly-bean;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: $snow;
+    &__container {  
+        text-align: center;
+    }
+    &__title {
+        @extend .product__title;
+        margin-top: 0;
+    }
+    button {
+        padding: .4rem 4rem;
+        background-color: $snow;
+        &:hover {
+            background-color: $quick-silver; 
+            color: $snow;
+        }
+    }
 }

@@ -1,0 +1,49 @@
+.main {
+    width: 100vw;
+    background-color: $jelly-bean;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @media (min-width: 576px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    @media (min-width: 768px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    @media (min-width: 992px) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    @media (min-width: 1200px) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    &__title {
+        color: $white;
+        font-family: $raleway; 
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: $bold;
+        font-size: 1rem;
+        @media (min-width: 576px) {
+            font-size: 1.2rem;
+        }
+        @media (min-width: 768px) {
+            font-size: 1.3rem;
+        }
+        @media (min-width: 992px) {
+            font-size: 1.5rem;
+        }
+        @media (min-width: 1200px) {
+            font-size: 1.8rem;
+        }
+        &--light {
+            font-weight: $extra-light;
+            display: block;
+        }
+    }
+}
